@@ -1,0 +1,65 @@
+$primary-color: #FF8181;
+
+@import 'animate.css';
+
+@font-face {
+  font-family: 'Lexend';
+  src: url('./assets/fonts/Lexend-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Lexend-Light';
+  font-style: normal;
+  font-weight: lighter;
+  font-stretch: condensed;
+  src: url('./assets/fonts/Lexend-Light.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('./assets/fonts/Montserrat-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'NotoSans';
+  font-style: normal;
+  font-weight: normal;
+  font-stretch: normal;
+  src: url('./assets/fonts/NotoSans-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'NotoSans-Medium';
+  font-style: normal;
+  font-weight: bolder;
+  font-stretch: expanded;
+  src: url('./assets/fonts/NotoSans-Medium.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'NotoSans-Light';
+  font-style: normal;
+  font-weight: lighter;
+  font-stretch: condensed;
+  src: url('./assets/fonts/NotoSans-Light.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Quicksand';
+  src: url('./assets/fonts/Quicksand-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Quicksand-Medium';
+  src: url('./assets/fonts/Quicksand-Medium.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Quicksand-Light';
+  src: url('./assets/fonts/Quicksand-Light.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Bathilda';
+  src: url('./assets/fonts/Bathilda.otf') format('opentype');
+}

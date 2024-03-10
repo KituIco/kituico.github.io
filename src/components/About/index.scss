@@ -1,0 +1,124 @@
+.aboutme {
+  background: #FEE7D6;
+  width: 100%;
+  min-height: 800px;
+  padding: 80px 0px 20px;
+  position: relative;
+  z-index: 0;
+
+  .content {
+    @media only screen and (min-width: 1120px) {
+      margin: 0px 100px;
+    }
+
+    @media only screen and (max-width: 1120px) {
+      margin: 0px 5%;
+    }
+
+    @media only screen and (max-width: 768px) {
+      margin: 0px 20px;
+    }
+  }
+  
+  h1 {
+    font-family: 'Lexend';
+    font-size: 48px;
+    color: #692A2A;
+    font-weight: 900;
+    margin: 0px auto -10px;
+    text-shadow: 2px 2px rgb(188, 143, 114);
+  }
+
+  .row {
+    @media only screen and (min-width: 920px) {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .column {
+      @media only screen and (min-width: 920px) {
+        max-width: 400px;
+      }
+      
+
+      img{
+        max-width: 100%;
+        border-radius: 20px;
+      }
+    }
+  }
+
+  .subheader {
+    @media only screen and (min-width: 920px) {
+      max-width: 400px;
+    }
+  } 
+
+  h2{
+    font-family: 'NotoSans';
+    font-size: 28px;
+    color: #692A2A;
+  }
+
+  h3{
+    font-family: 'Quicksand-Medium';
+    font-size: 18px;
+    line-height: 26px;
+    color: #692A2A;
+    margin: 30px 0px -10px
+  }
+
+  h4{
+    font-family: 'Quicksand-Light';
+    font-size: 15px;
+    color: #692A2A;
+    line-height: 30px;
+    letter-spacing: 2px;
+    margin-bottom: 40px;
+  }
+
+  .button {
+    font-family: 'Lexend';
+    text-decoration:none;
+    color: #692A2A;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    font-weight: 100;
+    font-size: 12px;
+    display: block;
+    max-width: 222px;
+    margin-bottom: 60px;
+
+    .circle {
+      width: 24px;
+      height: 24px;
+      border: 2px solid #692A2A;
+      border-radius: 14px;
+      transition:all 0.5s ease;
+    }
+
+    .label {
+      position: relative;
+      top: -22px;
+      left: 50px;
+      font-weight: 600;
+      transition:all 0.5s ease;
+    }
+  }
+
+  .button:hover {  
+    .circle {
+      width: 220px;
+      height: 40px;
+      border-radius: 22px;
+      transition:all 0.5s ease;
+    }
+
+    .label {
+      top: -30px;
+      left: 46px;
+      font-weight: 100;
+      transition:all 0.5s ease;
+    }
+  }
+}

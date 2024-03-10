@@ -1,0 +1,16 @@
+.main {
+  .page {
+    @media only screen and (min-width: 1366px) {
+      padding-top: 40px;
+    }
+    @media only screen and (max-width: 1366px) {
+      padding-top: 60px;
+    }
+
+    z-index: 1;
+    margin: auto;
+    max-width: 1120px;
+    overflow: hidden;
+  }
+
+}
