@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import { NavLink } from 'react-router-dom';
 import './index.scss';
 
 import homeworksLogo from '../../assets/media/logos/homeworks.png';
@@ -42,7 +41,7 @@ const Project = () => {
         </div>
         <div className={`text ${proj===projs[comp] ? 'highlight' : ''}`}>
           <div className={`description ${proj===projs[comp] ? 'highlight' : ''}`}>{info[comp].description}</div>
-          <div className={`stack ${proj===projs[comp] ? 'highlight' : ''}`}>Made with {info[comp].stack.join(', ')}</div>
+          <div className={`stack ${proj===projs[comp] ? 'highlight' : ''}`}>{info[comp].stack.join(', ')}</div>
         </div>
         <div className='icon'>
           <img src={info[comp].logo} alt={info[comp].name}/>

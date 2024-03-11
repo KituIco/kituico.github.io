@@ -225,6 +225,8 @@
       z-index: -1;
       max-height: 0;
       pointer-events:none;
+      user-select: none;
+      -webkit-tap-highlight-color:  rgba(255, 255, 255, 0); 
       transition: max-height 1s ease-out, opacity 0.5s ease-out;
 
       
@@ -426,6 +428,7 @@
 }
 
 .banners {
+  background-color: #FF8181;
   background-image: url('../../assets/media/BG - Banner.png');
   background-size: cover;
   width: 100%;
