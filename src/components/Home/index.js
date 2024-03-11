@@ -5,7 +5,7 @@ import About from '../About';
 import Skills from '../Skills';
 import Experience from '../Experience';
 
-import { FaFacebookSquare, FaLinkedin, FaGithub, FaWhatsapp, FaYoutube   } from 'react-icons/fa';
+import { FaFacebookSquare, FaLinkedin, FaGithub, FaWhatsapp, FaYoutube } from 'react-icons/fa';
 import Project from '../Project';
 
 

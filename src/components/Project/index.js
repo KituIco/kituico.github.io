@@ -11,7 +11,8 @@ import cincoLogo from '../../assets/media/logos/cinco.png';
 import cincoBanner from '../../assets/media/banner/cinco.png';
 
 const Project = () => {
-  const [proj, setProj] = useState('HomeWorks')
+  const [resume, setResume] = useState(false);
+  const [proj, setProj] = useState('HomeWorks');
   const projs = ['HomeWorks', 'NotesOn', 'GSPTS', 'Cinco!'];
   const info = [
     { name: 'HomeWorks: Home Services App', logo: homeworksLogo, banner: homeworksBanner,
@@ -67,7 +68,13 @@ const Project = () => {
       </div>
 
       <div className='resume'>
-        
+        <a href='https://www.linkedin.com/in/kvtuico/' target='_blank' rel='noopener noreferrer' className='title' onMouseEnter={() => setResume(true)}  onMouseLeave={() => setResume(false)}>
+          Download CV
+          <div className={`underline ${resume ? 'highlight' : ''}`}/>
+        </a>
+        <div className='subtitle'>
+
+        </div>
       </div>
     </>
   )

@@ -245,8 +245,33 @@
   background-size: cover;
   width: 100%;
   padding: 120px 0px;
+  display: flex;
 
   @media only screen and (max-width: 528px) {
     padding: 80px 0px;
+  }
+
+  .title {
+    font-family: 'Lexend';
+    text-decoration:none;
+    margin: 0px auto;
+    color: #FFF;
+    font-weight: 800;
+    font-size: 58px;
+    text-align: center;
+    text-shadow: 1px 1px #FF0000;
+  }
+
+  .underline {
+    height: 18px;
+    width: 420px;
+    background-color: rgb(254, 231, 214);
+    margin: -20px 0px 0px;
+    transition: all 0.5s ease;
+  }
+
+  .underline.highlight {
+    margin: -4px 0px -16px;
+    transition: all 0.5s ease;
   }
 }

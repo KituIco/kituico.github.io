@@ -63,3 +63,34 @@ $primary-color: #FF8181;
   font-family: 'Bathilda';
   src: url('./assets/fonts/Bathilda.otf') format('opentype');
 }
+
+
+.loading{
+  display: flex;
+  width: 100vw;
+  height: 100svh;
+  align-items: center;
+  justify-content: center;
+
+  .logo {
+    height: 50px;
+    width: 50px;
+    margin: -75px auto 10svh;
+  }
+
+  .spinner {
+    animation: rotation 1s infinite linear;
+    height: 100px;
+    width: 100px;
+    margin: 0px auto;
+  }
+
+  @keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+}
