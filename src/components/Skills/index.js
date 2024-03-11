@@ -25,9 +25,10 @@ import gitLogo from '../../assets/media/logos/git.png';
 import vscLogo from '../../assets/media/logos/vsc.png';
 import postmanLogo from '../../assets/media/logos/postman.png';
 import figmaLogo from '../../assets/media/logos/figma.png';
+import mockplusLogo from '../../assets/media/logos/mockplus.png';
 import androidLogo from '../../assets/media/logos/android.png';
 import mysqlLogo from '../../assets/media/logos/mysql.png';
-import postgresqlLogo from '../../assets/media/logos/postgresql.png';
+import sqliteLogo from '../../assets/media/logos/sqlite.png';
 import redisLogo from '../../assets/media/logos/redis.png';
 import awsLogo from '../../assets/media/logos/aws.png';
 import gcloudLogo from '../../assets/media/logos/cloud.png';
@@ -102,15 +103,15 @@ const Skills = () => {
   }
 
   const development = [];
-  const deveVal = ['Docker', 'Git + Github', 'Node.JS', 'Visual Studio Code', 'Postman', 'Figma', 'Android Studio'];
-  const deveLogo = [dockerLogo, gitLogo, nodeLogo, vscLogo, postmanLogo, figmaLogo, androidLogo];
+  const deveVal = ['Docker', 'Git + Github', 'Node.JS', 'Visual Studio Code', 'Postman', 'Figma', 'Mockplus', 'Android Studio'];
+  const deveLogo = [dockerLogo, gitLogo, nodeLogo, vscLogo, postmanLogo, figmaLogo, mockplusLogo, androidLogo];
   for (let i=0; i<deveVal.length; i++) {
     development.push( format(deveVal[i], deveLogo[i]) )
   }
 
   const cloud = [];
-  const cloudVal = ['MySQL', 'PostgreSQL', 'Redis', 'Amazon Web Services', 'Google Cloud', 'Wireshark'];
-  const cloudLogo = [mysqlLogo, postgresqlLogo, redisLogo, awsLogo, gcloudLogo, wiresharkLogo];
+  const cloudVal = ['MySQL', 'SQLite', 'Redis', 'Amazon Web Services', 'Google Cloud', 'Wireshark'];
+  const cloudLogo = [mysqlLogo, sqliteLogo, redisLogo, awsLogo, gcloudLogo, wiresharkLogo];
   for (let i=0; i<cloudVal.length; i++) {
     cloud.push( format(cloudVal[i], cloudLogo[i]) )
   }
