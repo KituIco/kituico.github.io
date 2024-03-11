@@ -88,10 +88,12 @@ const Experience = () => {
     return (
       <div className={`paragraph ${exp===expys[comp] ? 'highlight' : ''}`}>
         <div className='top'>
-          <div className='role'>{info[comp].positions[pos]} <span className='subpos'>{info[comp].subpositions[pos]}</span></div>
-          <div className='date'>{info[comp].date[pos]}</div>
+          <div className={`role ${exp===expys[comp] ? 'highlight' : ''}`}>{info[comp].positions[pos]}&nbsp; 
+            <span className={`subpos ${exp===expys[comp] ? 'highlight' : ''}`}>{info[comp].subpositions[pos]}</span>
+          </div>
+          <div className={`date ${exp===expys[comp] ? 'highlight' : ''}`}>{info[comp].date[pos]}</div>
         </div>
-        <div className='info'>{ info[comp].details[pos] }</div>
+        <div className={`info ${exp===expys[comp] ? 'highlight' : ''}`}>{ info[comp].details[pos] }</div>
       </div>
     )
   }

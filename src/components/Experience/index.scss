@@ -221,11 +221,10 @@
     
     .paragraph {
       opacity: 0;
-      display: relative;
       z-index: -1;
       max-height: 0;
+      position: relative;
       pointer-events:none;
-      user-select: none;
       -webkit-tap-highlight-color:  rgba(255, 255, 255, 0); 
       transition: max-height 1s ease-out, opacity 0.5s ease-out;
 
@@ -241,15 +240,21 @@
       }
 
       .role {
-        font-size: 16px;
+        font-size: 0px;
         margin: 2px 0px 0px;
         font-family: 'Montserrat';
         font-weight: 600;
         color:rgb(105, 42, 42);
+        transition: font-size 0.5s ease 0.2s;
+      }
+
+      .role.highlight {
+        font-size: 16px;
+        transition: font-size 0.5s ease 0.2s;
       }
 
       .date {
-        font-size: 16px;
+        font-size: 0px;
         margin: 2px 0px 12px;
         font-family: 'Montserrat';
         color: rgb(188, 143, 114);
@@ -257,6 +262,13 @@
         font-variant: small-caps;
         font-weight: 500;
         letter-spacing: -1px;
+        transition: font-size 0.5s ease 0.2s;
+        
+      }
+
+      .date.highlight {
+        font-size: 16px;
+        transition: font-size 0.5s ease 0.2s;
 
         @media only screen and (max-width: 768px) {
           font-size: 12px;
@@ -264,31 +276,44 @@
       }
 
       .subpos {
-        font-size: 12px;
-        top: 5px;
+        font-size: 0px;
+        top: 10px;
         color:rgb(188, 143, 114);
         font-weight: 100;
-        position: relative;
+        position: absolute;
         font-family: 'Lexend-Light';
         text-shadow: none;
+        transition: font-size 0.5s ease 0.2s;
       }
 
+      .subpos.highlight {
+        font-size: 12px;
+        transition: font-size 0.5s ease 0.2s;
+      }
+      
+
       .info {
-        font-size: 14px;
-        line-height: 22px;
+        font-size: 0px;
         font-family: 'Quicksand';
         letter-spacing: 1px;
         font-weight: 100;
         color:rgb(105, 42, 42);
         text-align: justify;
         text-justify: inter-word;
+        transition: font-size 0.5s ease 0.2s;
+        
+      }
+
+      .info.highlight {
+        font-size: 14px;
+        line-height: 22px;
+        transition: font-size 0.5s ease 0.2s;
 
         @media only screen and (max-width: 768px) {
           font-size: 12px;
           line-height: 20px;
         }
       }
-
     }
     .paragraph.highlight {
       opacity: 1;
