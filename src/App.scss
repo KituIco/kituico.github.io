@@ -46,16 +46,25 @@ $primary-color: #FF8181;
 
 @font-face {
   font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: normal;
+  font-stretch: normal;
   src: url('./assets/fonts/Quicksand-Regular.ttf') format('truetype');
 }
 
 @font-face {
   font-family: 'Quicksand-Medium';
+  font-style: normal;
+  font-weight: bolder;
+  font-stretch: expanded;
   src: url('./assets/fonts/Quicksand-Medium.ttf') format('truetype');
 }
 
 @font-face {
   font-family: 'Quicksand-Light';
+  font-style: normal;
+  font-weight: lighter;
+  font-stretch: condensed;
   src: url('./assets/fonts/Quicksand-Light.ttf') format('truetype');
 }
 

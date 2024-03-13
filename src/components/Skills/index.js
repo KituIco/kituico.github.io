@@ -142,7 +142,7 @@ const Skills = () => {
     <div className='skills'>
       <div className='content'>
         <h1>skills</h1>
-        <h4 className='subheader'>Has developed websites, mobile apps, and games. Has designed pubmats such as animations, illustrations, and other media.</h4>
+        <h4 className='subheader'>Dive into the broad spectrum of my professional skills in the field of software development and visual design.</h4>
 
         <div className='categories'>
           <div className={`category ${skill==='language' ? 'highlight' : ''}`} onMouseEnter={() => setSkill('language')}>

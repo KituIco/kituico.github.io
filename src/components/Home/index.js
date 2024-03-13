@@ -4,9 +4,10 @@ import kitu from '../../assets/media/Japan.jpg';
 import About from '../About';
 import Skills from '../Skills';
 import Experience from '../Experience';
+import Project from '../Project';
+import Contact from '../Contact';
 
 import { FaFacebookSquare, FaLinkedin, FaGithub, FaWhatsapp, FaYoutube } from 'react-icons/fa';
-import Project from '../Project';
 
 
 const Home = () => {
@@ -45,6 +46,7 @@ const Home = () => {
       <Skills />
       <Experience />
       <Project />
+      <Contact />
     </>
   )
 }

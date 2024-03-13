@@ -49,6 +49,7 @@
       border-radius: 20px;
       transition: all 0.5s ease-in;
       position: relative;
+      cursor: pointer;
       box-shadow: 2px 2px 1px rgba(255, 0, 0, 0.2);
       overflow: hidden;
 
@@ -241,11 +242,15 @@
 }
 
 .resume {
+  background-color: #FF8181;
   background-image: url('../../assets/media/BG - Banner.png');
   background-size: cover;
   width: 100%;
   padding: 120px 0px;
   display: flex;
+  flex-direction: column;
+  z-index: 0;
+  position: relative;
 
   @media only screen and (max-width: 528px) {
     padding: 80px 0px;
@@ -260,6 +265,11 @@
     font-size: 58px;
     text-align: center;
     text-shadow: 1px 1px #FF0000;
+    cursor: pointer;
+
+    @media only screen and (max-width: 540px) {
+      font-size: 40px;
+    }
   }
 
   .underline {
@@ -268,10 +278,40 @@
     background-color: rgb(254, 231, 214);
     margin: -20px 0px 0px;
     transition: all 0.5s ease;
+    
+    @media only screen and (max-width: 540px) {
+      margin: -14px 0px 0px;
+      width: 100%;
+      height: 12px;
+    }
   }
 
   .underline.highlight {
     margin: -4px 0px -16px;
     transition: all 0.5s ease;
+
+    @media only screen and (max-width: 540px) {
+      margin: -4px 0px -10px;
+      transition: all 0.5s ease;
+    }
+  }
+
+  .subtitle {
+    margin: 40px auto 0px;
+    font-family: 'Quicksand';
+    font-size: 15px;
+    font-weight: 500;
+    color: #FFF;
+    text-shadow: 0.5px 0.5px #FF0000;
+    text-align: center;
+    line-height: 30px;
+    letter-spacing: 2px;
+    max-width: 520px;
+
+    @media only screen and (max-width: 540px) {
+      font-size: 12px;
+      line-height: 20px;
+      width: calc(100% - 20px)
+    }
   }
 }

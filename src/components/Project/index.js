@@ -73,7 +73,7 @@ const Project = () => {
           <div className={`underline ${resume ? 'highlight' : ''}`}/>
         </a>
         <div className='subtitle'>
-
+          Embark on a journey through my professional landscape by viewing a snapshot of my career path.
         </div>
       </div>
     </>
