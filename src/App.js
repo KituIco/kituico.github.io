@@ -9,7 +9,7 @@ import Layout from './components/Layout';
 
 
 function App() {
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
     setTimeout(() => setLoading(true), 1000)
