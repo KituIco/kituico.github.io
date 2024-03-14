@@ -1,6 +1,12 @@
 .contact   {
   background: #FEE7D6;
   position: relative;
+  
+
+  @media only screen and (min-width: 1366px) {
+    border-bottom-left-radius: 45px;
+  }
+
 
   @media only screen and (min-width: 1120px) {
     padding: 80px 100px;

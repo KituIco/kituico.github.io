@@ -113,7 +113,7 @@ const Experience = () => {
           <h1>experiences</h1>        
           { experiences }
         </div>
-        <div className='footer'/>
+        <div className='foot'/>
       </div>
 
       <div className='banners'>

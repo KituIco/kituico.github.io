@@ -3,22 +3,23 @@ import { Outlet } from 'react-router-dom';
 import './index.scss';
 import Sidebar from '../Sidebar';
 
+import videoBg from '../../assets/media/MainBG.mp4';
+
 const Layout = () => {
 
 
   return (
     <div className='main'>
+      <video src={videoBg} autoPlay loop muted className='mainBG'/>
       <Sidebar/>
 
       <div className='page'>
-
         <Outlet />
-        <span className='tags bottom-tags'>
-          &lt;/body&gt;
-          <br />
-          <span className='bottom-tag-html'>&lt;/html&gt;</span>
-        </span>
-        
+      </div>
+
+      <div className='footer'>
+        © 2024 Kim Tuico. All rights reserved<br/>
+        <span className='light'>Powered by React.</span>
       </div>
 
     </div>

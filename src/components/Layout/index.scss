@@ -1,4 +1,14 @@
 .main {
+
+  .mainBG {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    object-fit: cover;
+    z-index: -1;
+    filter: opacity(15%);
+  }
+
   .page {
     @media only screen and (min-width: 1366px) {
       padding-top: 40px;
@@ -11,6 +21,19 @@
     margin: auto;
     max-width: 1120px;
     overflow: hidden;
+  }
+
+  .footer {
+    padding: 40px 0px;
+    text-align: center;
+    font-family: 'Quicksand';
+    font-size: 16px;
+    line-height: 30px;
+
+    .light {
+      font-size: 14px;
+      color: rgba(0,0,0,0.5)
+    }
   }
 
 }
