@@ -18,7 +18,7 @@ const Sidebar = () => {
         <div className='adjuster'/>
         <div className='nav-bar'>
           <Link className='logo' to='/'>
-            <img src={logo} alt="Logo" />
+            <img src={logo} alt="Logo" className={showNav ? 'open': ''}/>
           </Link>
           
           <div className={showNav ? 'burger-open': 'burger-close'}>

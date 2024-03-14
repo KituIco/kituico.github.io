@@ -47,15 +47,21 @@
           @media only screen and (min-width: 1366px) {
             width: 60px;
             height: auto;
+            
           }
   
           @media only screen and (max-width: 1366px) {
             width: auto;
             height: 44px;
-            padding: 0 5vw;
+            margin: 0 5vw;
+            background-color: #FFF;
           }
-  
           display: block;
+        }
+
+        .open {
+          background-color: #FFF;
+          transition: all 1s ease;
         }
       }
   
