@@ -10,11 +10,11 @@ import Contact from '../Contact';
 import { FaFacebookSquare, FaLinkedin, FaGithub, FaWhatsapp, FaYoutube } from 'react-icons/fa';
 
 
-const Home = () => {
-  
+const Home = ({ navHeader }) => {
+ 
   return (
     <>
-      <div className='cover'>
+      <div className='cover' id='home' ref={navHeader[0].headerRef}>
         <video src={videoBg} autoPlay loop muted/>
 
         <div className='caption'>
@@ -42,11 +42,11 @@ const Home = () => {
         </div>
       </div>
 
-      <About />
-      <Skills />
-      <Experience />
-      <Project />
-      <Contact />
+      <About navHeader={navHeader}/>
+      <Skills navHeader={navHeader}/>
+      <Experience navHeader={navHeader}/>
+      <Project navHeader={navHeader}/>
+      <Contact navHeader={navHeader}/>
     </>
   )
 }

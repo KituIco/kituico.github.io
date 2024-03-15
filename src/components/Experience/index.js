@@ -12,7 +12,7 @@ import cursorBanner from '../../assets/media/banner/cursor.png';
 import masciBanner from '../../assets/media/banner/masci.png';
 import { useState } from 'react';
 
-const Experience = () => {
+const Experience = ({ navHeader }) => {
   const [exp, setExp] = useState('s3lab')
   const expys = ['s3lab', 'saperium', 'dostsa', 'cursor', 'masci'];
   const banner = [s3labBanner, saperiumBanner, upBanner, dostsaBanner, cursorBanner, masciBanner];
@@ -108,7 +108,7 @@ const Experience = () => {
   
   return (
     <>
-      <div className='experiences'>
+      <div className='experiences' id='experiences' ref={navHeader[3].headerRef}>
         <div className='content'>
           <h1>experiences</h1>        
           { experiences }

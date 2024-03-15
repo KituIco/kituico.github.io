@@ -2,7 +2,7 @@ import './index.scss';
 import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 
-const Contact = () => {
+const Contact = ({ navHeader }) => {
   const form = useRef();
   const initialValues = { name: '', email: '', subject: '', message: '' };
   const [formValues, setFormValues] = useState(initialValues);
@@ -44,7 +44,7 @@ const Contact = () => {
   };
   
   return (
-    <div className='contact'>
+    <div className='contact' id={'contact'} ref={navHeader[5].headerRef}>
       <h1>contact me</h1>
       <div className='content'>
         <div className='info'>

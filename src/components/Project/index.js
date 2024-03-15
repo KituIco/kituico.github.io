@@ -10,7 +10,7 @@ import gsptsBanner from '../../assets/media/banner/gspts.png';
 import cincoLogo from '../../assets/media/logos/cinco.png';
 import cincoBanner from '../../assets/media/banner/cinco.png';
 
-const Project = () => {
+const Project = ({ navHeader }) => {
   const [resume, setResume] = useState(false);
   const [proj, setProj] = useState('HomeWorks');
   const projs = ['HomeWorks', 'NotesOn', 'GSPTS', 'Cinco!'];
@@ -58,7 +58,7 @@ const Project = () => {
   
   return (
     <>
-      <div className='projects'>
+      <div className='projects' id='projects' ref={navHeader[4].headerRef}>
         <div className='content'>
           <h1>projects</h1>   
           <div className='cardsContainer'>

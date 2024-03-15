@@ -5,13 +5,12 @@ import Sidebar from '../Sidebar';
 
 import videoBg from '../../assets/media/MainBG.mp4';
 
-const Layout = () => {
-
+const Layout = ({ navHeader }) => {
 
   return (
     <div className='main'>
       <video src={videoBg} autoPlay loop muted className='mainBG'/>
-      <Sidebar/>
+      <Sidebar navHeader={navHeader}/>
 
       <div className='page'>
         <Outlet />

@@ -3,6 +3,7 @@
   background: transparent;
   min-width: 100vw;
   z-index: 0;
+  transition: all 0.5s ease 0.5s;
 
   @media only screen and (max-width: 1366px) {
     z-index: 3;
@@ -14,6 +15,7 @@
       width: 1280px;
       margin: auto;
       justify-content: space-between;
+      z-index: 4;
     }
     
     .adjuster {
@@ -29,6 +31,7 @@
     }
 
     .nav-bar {
+      z-index: 4;
       @media only screen and (min-width: 1366px) {
         padding: 40px 0px;
       }
@@ -116,7 +119,6 @@
   .pager-enter-active {
     opacity: 1;
     transform: translateY(0);
-    z-index: inherit;
     transition: opacity 500ms, transform 500ms;
   }
   .pager-exit {
@@ -133,19 +135,65 @@
     @media only screen and (min-width: 1366px) {
       margin-top: -252px;
     }
-    top: 0;
+    position: relative;
     left: 0;
     background-color: #BC8F72;
     min-width: 100vw;
     max-height: 100vh;
     overflow-y: auto;
     display: block;
+    transition: all 0.5s ease;
+
+    &.open {
+      top: 0;
+    }
+
+    &.close {
+      top: 110vh;
+      z-index: 4;
+    }
     
 
     .menu {
-      min-height: 101vh;
+      min-height: 100vh;
+      margin: auto;
+      margin-top: 60px;
+      max-width: 1120px;
+      overflow: hidden;
+    }
+
+    .container {
+      width: auto;
+      margin: 30px 0px;
+      display: flex;
+    }
+
+    .navlink {
+      text-decoration: none;
+      font-family: 'Lexend';
+      font-size: 20px;
+      color: #FFF;
+      padding: 0px 10px;
+    }
+
+    .underline {
+      transition: all 0.5s ease;
+      height: 10px;
+      background-color: rgb(105, 42, 42);
+      margin: -10px -5px;
+
+      &.active {
+        width: calc(100% + 10px);
+      }
+
+      &.hidden {
+        width: 0%;
+      }
     }
     
+    .active {
+      color: red;
+    }
   }
 
   .page-none {
@@ -155,6 +203,7 @@
 
 .nav.onTop {
   z-index: 3;
+  transition: all 0s;
 
   @media only screen and (min-width: 1366px) {
     z-index: 3;

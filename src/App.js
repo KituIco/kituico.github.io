@@ -1,6 +1,6 @@
 import './App.scss';
 import { Routes, Route } from 'react-router-dom';
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 
 import sqlogo from './assets/media/sqlogo.png';
 import spinner from './assets/media/spinner.png';
@@ -9,18 +9,57 @@ import Layout from './components/Layout';
 
 
 function App() {
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
+  const homeRef = useRef();
+  const aboutRef = useRef();
+  const skillsRef = useRef();
+  const experiencesRef = useRef();
+  const projectsRef = useRef();
+  const contactRef = useRef();
+
+  const navHeader = [
+    {
+      headerTitle: "Home",
+      headerRef: homeRef,
+      headerID: "home"
+    },
+    {
+      headerTitle: "About",
+      headerRef: aboutRef,
+      headerID: "about"
+    },
+    {
+      headerTitle: "Skills",
+      headerRef: skillsRef,
+      headerID: "skills"
+    },
+    {
+      headerTitle: "Experiences",
+      headerRef: experiencesRef,
+      headerID: "experiences"
+    },
+    {
+      headerTitle: "Projects",
+      headerRef: projectsRef,
+      headerID: "projects"
+    },
+    {
+      headerTitle: "Contact",
+      headerRef: contactRef,
+      headerID: "contact"
+    }
+  ];
 
   useEffect(() => {
-    setTimeout(() => setLoading(true), 2000)
+    setTimeout(() => setLoading(false), 2000)
   }, []);
 
   return (
     <>
-    { loading ? (
+    { !loading ? (
       <Routes>
-        <Route path="/" element={<Layout />}>
-          <Route index element={<Home />} />
+        <Route path="/" element={<Layout navHeader={navHeader}/>}>
+          <Route index element={<Home navHeader={navHeader}/>} />
         </Route>
       </Routes>
       ) : (

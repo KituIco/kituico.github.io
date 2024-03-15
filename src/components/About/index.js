@@ -4,10 +4,10 @@ import gallery from '../../assets/media/ph-gallery.png';
 
 import { NavLink } from 'react-router-dom';
 
-const About = () => {
+const About = ({ navHeader }) => {
 
   return (
-    <div className='aboutme'>
+    <div className='aboutme' id='about' ref={navHeader[1].headerRef}>
       <div className='content'>
         <h1>about me</h1>
         <h4 className='subheader'>Has developed websites, mobile apps, and games. Has designed pubmats such as animations, illustrations, and other media.</h4>

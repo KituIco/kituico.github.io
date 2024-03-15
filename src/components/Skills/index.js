@@ -45,7 +45,7 @@ import publishLogo from '../../assets/media/logos/publish.png';
 import { useState } from 'react';
 
 
-const Skills = () => {
+const Skills = ({ navHeader }) => {
   const [skill, setSkill] = useState('language');
 
   const format = (val, icon) => {
@@ -139,7 +139,7 @@ const Skills = () => {
 
 
   return (
-    <div className='skills'>
+    <div className='skills' id='skills' ref={navHeader[2].headerRef}>
       <div className='content'>
         <h1>skills</h1>
         <h4 className='subheader'>Dive into the broad spectrum of my professional skills in the field of software development and visual design.</h4>
