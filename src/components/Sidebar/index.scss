@@ -4,6 +4,7 @@
   min-width: 100vw;
   z-index: 0;
   transition: all 0.5s ease 0.5s;
+ 
 
   @media only screen and (max-width: 1366px) {
     z-index: 3;
@@ -22,7 +23,7 @@
       @media only screen and (min-width: 1366px) {
         display: block;
         width: 100px;
-        height: 100px;
+        height: 100px;  
       }
 
       @media only screen and (max-width: 1366px) {
@@ -153,7 +154,11 @@
 
     &.close {
       top: 110vh;
-      z-index: 4;
+
+      @media only screen and (max-width: 1366px) {
+        max-height: 0;
+        transition: top 0.5s ease, max-height 0s ease 0.5s;
+      }
     }
     
 
