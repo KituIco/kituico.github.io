@@ -21,14 +21,14 @@ const Home = ({ navHeader }) => {
           <img src={kitu} alt='Kitu in Japan' />
           <div className='text'>
             <h3>
-              <span>Welcome My name is</span>
+              Welcome My name is
             </h3>
             <h1>
               Kim Bryann &nbsp; &nbsp; &nbsp;Tuico
               <span className='highlight'> Kitu<span className='hspace'> </span>Ico</span> 
             </h1>
             <h2>
-              <span>a <span className='highlight'>Full Stack Developer</span> who is keen about graphics design and visual arts</span>
+              <span>a <span className='highlight'>Full Stack Developer</span> with a passion for graphic design and visual arts</span>
             </h2>
 
             <div className='socials'>

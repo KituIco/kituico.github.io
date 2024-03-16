@@ -6,6 +6,8 @@ import Hamburger from 'hamburger-react';
 import './index.scss';
 import logo from '../../assets/media/logo.png';
 
+import { FaFacebookSquare, FaLinkedin, FaGithub, FaWhatsapp, FaYoutube } from 'react-icons/fa';
+
 const nearestIndex = ( currentPosition, sectionPositionArray, startIndex, endIndex ) => {
   if (startIndex === endIndex) return startIndex;
   else if (startIndex === endIndex - 1) {
@@ -68,15 +70,35 @@ const Sidebar = ({ navHeader }) => {
       
       <div className={`page ${showNav ? 'open' : 'close'}`}>
         <div className='menu'>
-          {navHeader.map((header, index) => (
-            <div className='container' onMouseEnter={() => setPointer(index)} onMouseLeave={() => setPointer(-1)}>
-              <Link key={index + header.headerID} className="navlink" to={`#${header.headerID}`} onClick={() => setShowNav(false)} smooth>
-                {header.headerTitle}
-                <div className={`underline ${activeIndex === index || pointer === index ? 'active': 'hidden'}`}/>
-              </Link>
+          <div className='header'>Menu</div>
+
+          <div className='elements'>
+            <div className='navigator'>
+              {navHeader.map((header, index) => (
+                <div className='container'>
+                  <Link key={index + header.headerID} className="navlink" to={`#${header.headerID}`} onClick={() => setShowNav(false)} onMouseEnter={() => setPointer(index)} onMouseLeave={() => setPointer(-1)} smooth>
+                    {header.headerTitle}
+                    <div className={`underline ${activeIndex === index || pointer === index ? 'active': 'hidden'}`}/>
+                  </Link>
+                </div>
+              ))}
+
             </div>
-          ))}
-          
+
+            <div className='details'>
+              <div className='heading'>Seeking out elegant approaches and optimal solutions to problems</div>
+              <div className='subheading'>Has developed several websites, mobile apps, and games. Has advocated the value of science and technology to various communities. Has designed numerous publicity resources.</div>
+              <div className='signature'>Kitu<span className='hspace'> </span>Ico</div>
+              <div className='socials'>
+                <a  href='https://www.linkedin.com/in/kvtuico/' target='_blank' rel='noopener noreferrer' className='linkedin'><FaLinkedin/></a>
+                <a  href='https://github.com/KituIco' target='_blank' rel='noopener noreferrer' className='github'><FaGithub/></a>
+                <a  href='https://www.facebook.com/kbvt6/' target='_blank' rel='noopener noreferrer' className='facebook'><FaFacebookSquare/></a>
+                <a  href='https://wa.me/qr/QHQKIDKJQLDXM1' target='_blank' rel='noopener noreferrer' className='whatsapp'><FaWhatsapp/></a>
+                <a  href='https://www.youtube.com/@sanashy' target='_blank' rel='noopener noreferrer' className='youtube'><FaYoutube/></a>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
 
