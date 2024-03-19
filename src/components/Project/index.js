@@ -68,7 +68,7 @@ const Project = ({ navHeader }) => {
       </div>
 
       <div className='resume'>
-        <a href='https://www.linkedin.com/in/kvtuico/' target='_blank' rel='noopener noreferrer' className='title' onMouseEnter={() => setResume(true)}  onMouseLeave={() => setResume(false)}>
+        <a href='https://drive.google.com/file/d/1ARnJ6zuaEfjdlQr2gJXcLho62s0BI2Or/view' target='_blank' rel='noopener noreferrer' className='title' onMouseEnter={() => setResume(true)}  onMouseLeave={() => setResume(false)}>
           Download CV
           <div className={`underline ${resume ? 'highlight' : ''}`}/>
         </a>
