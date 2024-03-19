@@ -51,26 +51,24 @@ function App() {
   ];
 
   useEffect(() => {
-    setTimeout(() => setLoading(false), 2000)
+    setTimeout(() => window.scrollTo(0, 0), 1000);
+    setTimeout(() => setLoading(false), 2000);
   }, []);
 
   return (
     <>
-    { !loading ? (
       <Routes>
         <Route path="/" element={<Layout navHeader={navHeader}/>}>
           <Route index element={<Home navHeader={navHeader}/>} />
         </Route>
       </Routes>
-      ) : (
-        <div className='loading'>
-          <div style={{display:'flex', flexDirection:'column'}}> 
-            <img src={spinner} alt='spinner' className='spinner'/>
-            <img src={sqlogo} alt='sqlogo' className='logo'/>
-          </div>
+
+      <div className={loading ? 'onload' : 'offload'}>
+        <div style={{display:'flex', flexDirection:'column'}}> 
+          <img src={spinner} alt='spinner' className='spinner'/>
+          <img src={sqlogo} alt='sqlogo' className='logo'/>
         </div>
-      )
-    }
+      </div>
     </>
   );
 }

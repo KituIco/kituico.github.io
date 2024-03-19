@@ -2,7 +2,8 @@ import './index.scss';
 import journey from '../../assets/media/ph-project.png';
 import gallery from '../../assets/media/ph-gallery.png';
 
-import { NavLink } from 'react-router-dom';
+// import { NavLink } from 'react-router-dom';
+import { HashLink as Link } from 'react-router-hash-link';
 
 const About = ({ navHeader }) => {
 
@@ -14,25 +15,25 @@ const About = ({ navHeader }) => {
 
         <div className='row'>
           <div className='column'>
-            <h2>Journey</h2>
-            <img src={journey} alt='journey'/>
-            <h3>Dolor sit amet, consectetur adipiscing elit viverra tristique</h3>
-            <h4>Faucibus sed tristique fames sed aliquet ultr eget viverra arcu. Vitae faucibus diam polo consequat maecenas. Turpis metus sit diam purus leo in varius ac quam nunc amet lorem</h4>
-            <NavLink activeclassname="active" to="/journey" className='button'>
+            <h2>Experiences</h2>
+            <img src={journey} alt='Experiences'/>
+            <h3>Contributing my expertise and passion within a collaborative team environment.</h3>
+            <h4>Driven full stack developer with a passion for crafting elegant solutions and leveraging technology to drive innovation. Explore my diverse range of experiences. </h4>
+            <Link activeclassname="active" to="/#experiences" className='button'>
               <div className='circle'></div> 
               <span className='label'>View More</span>
-            </NavLink>
+            </Link>
           </div>
 
           <div className='column'>
-            <h2>Gallery</h2>
-            <img src={gallery} alt='gallery'/>
-            <h3>Dolor sit amet, consectetur adipiscing elit viverra tristique</h3>
-            <h4>Faucibus sed tristique fames sed aliquet ultr eget viverra arcu. Vitae faucibus diam polo consequat maecenas. Turpis metus sit diam purus leo in varius ac quam nunc amet lorem</h4>
-            <NavLink activeclassname="active" to="/gallery" className='button'>
+            <h2>Projects</h2>
+            <img src={gallery} alt='Projects'/>
+            <h3>Most fulfilling way to delve into my interests is through hands-on projects.</h3>
+            <h4> As a passionate computer science graduate,  I’m always up for the challenge, whether it's building websites, crafting games, or developing mobile applications.</h4>
+            <Link activeclassname="active" to="/#projects" className='button'>
               <div className='circle'></div> 
               <span className='label'>View More</span>
-            </NavLink>
+            </Link>
           </div>
         </div>
       </div>

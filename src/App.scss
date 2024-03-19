@@ -74,12 +74,17 @@ $primary-color: #FF8181;
 }
 
 
-.loading{
+.onload {
   display: flex;
+  position: fixed;
   width: 100vw;
   height: 100svh;
   align-items: center;
   justify-content: center;
+  z-index: 5;
+  background-color: #FFF;
+  top: 0px;
+  left: 0px;
 
   .logo {
     height: 50px;
@@ -102,6 +107,10 @@ $primary-color: #FF8181;
       transform: rotate(359deg);
     }
   }
+}
+
+.offload {
+  display: none;
 }
 
 html {

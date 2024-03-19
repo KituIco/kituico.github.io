@@ -48,8 +48,8 @@ const Contact = ({ navHeader }) => {
       <h1>contact me</h1>
       <div className='content'>
         <div className='info'>
-          <div className='details'>A full stack allaround designer that tristique est placerat in massa consectetur quisque lobortis vitae faucibus diam</div>
-          <div className='subject'>Dolor sit amet, consectetur adipiscing elit viverra tristique</div>
+          <div className='details'>Let’s connect! Feel free to reach out through the channels below. I’m always eager to collaborate and discuss exciting opportunities.</div>
+          <div className='subject'>Seeking out elegant approaches and optimal solutions to problems</div>
           <div className='details'><span className='bold'>Name: </span>Kim Bryann Tuico</div>
           <div className='details'><span className='bold'>Address: </span>Mandaluyong, PH</div>
           <div className='details'><span className='bold'>Phone: </span>+63 966 982 4892</div>
